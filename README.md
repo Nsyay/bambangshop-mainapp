@@ -65,11 +65,11 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement unsubscribe function in Notification controller.`
     -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
-    -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
-    -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
-    -   [ ] Commit: `Implement publish function in Program service and Program controller.`
-    -   [ ] Commit: `Edit Product service methods to call notify after create/delete.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
+    -   [x] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
+    -   [x] Commit: `Implement notify function in Notification service to notify each Subscriber.`
+    -   [x] Commit: `Implement publish function in Program service and Program controller.`
+    -   [x] Commit: `Edit Product service methods to call notify after create/delete.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -91,3 +91,8 @@ This is the place for you to write reflections:
 3. Postman membantu saya melakukan uji coba pada suatu method dari code yang sudah saya buat dengan POST dan GET. Tentunya saya tertarik untuk menggunakan Postman untuk projek-projek saya kedepannya dengan memanfaatkan fitur HTTP request testing, automation test, API monitoring, dan masih banyak lagi
 
 #### Reflection Publisher-3
+1. Pada BambangShop kita menggunakan push model, dimana ketika subject mengalami perubahan, maka observer akan langsung berubah, seperti saat melakukan create dan delete
+
+2. Pull model, memmiliki keuntungan dimana subscriber dapat mengontrol kapan dan apa data yang ingin diambil. Akan tetapi, model ini akan meningkatkan kompleksitas subscriber implementation dan apabila terlalu banyak request data, akan menyebabkan overload
+
+3. Tanpa multi-threading dalam notification akan memperlambat performa dan meningkatkan response time. Hal ini menyebabkan delaynya notifikasi ke pengguna, terlebih lagi jika jumlah subscriber ada banyak
