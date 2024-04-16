@@ -77,6 +77,11 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+1. Observer pattern adalah salah satu behavioural design pattern yang terdiri dari publisher sebagai subject dan subscriber sebagai observer. Perubahan pada subject akan disebarkan ke semua observer, mendefinisikan one-to-many relationship. Menurut saya, pada BambangShop ini apakah membutuhkan antarmuka lagi itu tergantung kompleksitas sistem/ Jika diperkirakan ada perubahan, maka sebaiknya menggunakan antarmuka, jika sederhana dan tidak mungkin berubah maka satu struct model saja sudah cukup
+
+2. karena `id` pada `Program` dan `url` pada `Subscriber` adalah unik, maka penggunaan DashMap direkomendasikan karena menggunakan struktur data efisien dalam melakukan add, update, atau remove dan cepat dalam melakukan pencarian. Sedangkan Vec(list) cenderung linear yang akan menyebabkan lemot untuk dataset yang besar dan mengurangi efisiensi
+
+3. Menggunakan DashMap membantu mensimplifikasi code dengan menyediakan akses yang efisien dan dapat multi-threading karena BambangShop adalah aplikasi multi-threading.
 
 #### Reflection Publisher-2
 
