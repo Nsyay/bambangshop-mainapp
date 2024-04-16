@@ -48,22 +48,22 @@ You can install Postman via this website: https://www.postman.com/downloads/
     (You might want to use `cargo check` if you only need to verify your work without running the app.)
 
 ## Mandatory Checklists (Publisher)
--   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
+-   [x] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Subscriber model struct.`
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Subscriber repository.`
-    -   [ ] Commit: `Implement list_all function in Subscriber repository.`
-    -   [ ] Commit: `Implement delete function in Subscriber repository.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
+    -   [x] Commit: `Create Subscriber model struct.`
+    -   [x] Commit: `Create Notification model struct.`
+    -   [x] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
+    -   [x] Commit: `Implement add function in Subscriber repository.`
+    -   [x] Commit: `Implement list_all function in Subscriber repository.`
+    -   [x] Commit: `Implement delete function in Subscriber repository.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -84,5 +84,10 @@ This is the place for you to write reflections:
 3. Menggunakan DashMap membantu mensimplifikasi code dengan menyediakan akses yang efisien dan dapat multi-threading karena BambangShop adalah aplikasi multi-threading.
 
 #### Reflection Publisher-2
+1. Memisahkan service dan repository akan menghasilkan code yang lebih bersih dan mengikuti prinsip-prinsip design seperti single responsibility principle. Selain itu, memisahkan service dan repository juga meningkatkan maintainability, testability dan flexibility
+
+2. Apabila hanya menggunakan model, maka code akan susah di manage, method semakin besar, kompleks, dan sulit dimengerti. Akibatnya, dapat menyebabkan kesulitan pada perubahan kode. Hal ini tentunya akan menurunkan maintainability dan mudah muncul bug
+
+3. Postman membantu saya melakukan uji coba pada suatu method dari code yang sudah saya buat dengan POST dan GET. Tentunya saya tertarik untuk menggunakan Postman untuk projek-projek saya kedepannya dengan memanfaatkan fitur HTTP request testing, automation test, API monitoring, dan masih banyak lagi
 
 #### Reflection Publisher-3
